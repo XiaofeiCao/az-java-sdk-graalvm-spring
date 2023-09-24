@@ -1,0 +1,98 @@
+*.class
+
+#Javadoc files
+dist/
+.publish/
+
+#External libs
+extlib/
+
+# Auth files
+*.auth
+*.azureauth
+
+# Local checkstyle
+*.checkstyle
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Azure Tooling #
+node_modules
+packages
+
+# Eclipse #
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+
+# Other Tooling #
+target
+.idea
+*.iml
+
+# Mac OS #
+.DS_Store
+.DS_Store?
+
+# Windows #
+Thumbs.db
+
+# reduced pom files should not be included
+dependency-reduced-pom.xml
+
+package-lock.json
+preprocessor/*.yaml
+fluentnamer/*.yaml
+fluentgen/*.yaml
+javagen/*.yaml
+/*.yaml
+*.log
+*.log.gz
+*.tgz
+
+# Generated code for tests
+/fluent-tests/src/main/java/com/azure/mgmttest/
+/fluent-tests/src/main/java/com/azure/mgmtlitetest/
+/fluent-tests/src/main/java/module-info.java
+/fluent-tests/src/samples/
+/fluent-tests/src/test/java/com/azure/mgmtlitetest/**/generated/
+/fluent-tests/src/test/resources/mockito-extensions/
+/fluent-tests/pom_generated_*.xml
+
+# DPG
+/protocol-tests/src/main/java/module-info.java
+
+/protocol-sdk-integration-tests/sdk/
+!/protocol-sdk-integration-tests/sdk/parents/
+
+# vanilla
+/azure-dataplane-tests/src/main/java/module-info.java
+
+# Cadl output
+/typespec-tests/tsp-output/
+/typespec-tests/cadl-ranch-coverage.json
+/typespec-tests/cadl-ranch-coverage-java.json
+/typespec-tests/tsp-src/
+
+# Coverage report
+/coverage/
+
+# Language server
+/postprocessor/jdt-language-server/
