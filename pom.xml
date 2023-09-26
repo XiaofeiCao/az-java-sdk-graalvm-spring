@@ -42,7 +42,7 @@
 		<!-- https://mvnrepository.com/artifact/com.azure.resourcemanager/azure-resourcemanager -->
 		<dependency>
 			<groupId>com.azure.resourcemanager</groupId>
-			<artifactId>azure-resourcemanager-containerinstance</artifactId>
+			<artifactId>azure-resourcemanager</artifactId>
 			<version>2.30.0</version>
 			<exclusions>
 				<exclusion>
@@ -70,13 +70,6 @@
 			<plugin>
 				<groupId>org.graalvm.buildtools</groupId>
 				<artifactId>native-maven-plugin</artifactId>
-				<configuration>
-					<buildArgs>
-                        <buildArg>-H:ConfigurationResourceRoots=src/main/resources/</buildArg>
-<!--						<buildArg>&#45;&#45;initialize-at-run-time=ch.qos.logback.core.pattern.parser.Parser</buildArg>-->
-<!--						<buildArg>&#45;&#45;trace-class-initialization=ch.qos.logback.core.pattern.parser.Parser</buildArg>-->
-					</buildArgs>
-				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
