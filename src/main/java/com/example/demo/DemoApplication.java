@@ -23,7 +23,7 @@ public class DemoApplication {
 	}
 
 	@EventListener(ApplicationStartedEvent.class)
-	public void listVMs() {
+	public void crudContainerGroup() {
 
         AzureProfile profile = new AzureProfile(AzureEnvironment.AZURE);
         TokenCredential credential = new DefaultAzureCredentialBuilder().build();
